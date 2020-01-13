@@ -1,0 +1,55 @@
+<div class="container">
+    
+    <div class="row d-flex">
+            <div class="col-sm-1 mt-2"><dt>Activity</dt></div>
+            <div class="col-sm-5"></div>
+            <div class="col-sm-2 pl-2 mt-2">VIEW ALL ACTIVITY<i class="material-icons">arrow_forward</i></div>
+            <div class="col-sm-3 mt-2"><dt>Top Peformers</dt></div>
+            <div class="col-sm-1 mt-2">VIEW ALL<i class="material-icons">arrow_forward</i></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 d-flex">
+                <mat-card class="card card-body flex-fill">
+                    <h6> RECENT </h6>
+                    <cdk-virtual-scroll-viewport itemSize="100" class="example-viewport">
+                        <div *cdkVirtualFor="let artist of data" class="list">
+                            <div class="d-flex mb-0">
+                                <div class="p-2 m-2">
+                                    <img class="img-fluid rounded-circle img-thumbnail" src="{{artist.thumbnailUrl}}">
+                                </div>
+                                <div class="p-2 m-2">{{artist.title}}<br/>
+                                        <button class="btn-green" mat-button>APPROVE</button>&nbsp;
+                                        <button class="btn-red" mat-button>REJECT</button>&nbsp;
+                                </div>
+                                <div class="p-2 ml-auto">
+                                    3 hours ago
+                                </div>
+                            </div>
+                        </div>
+                    </cdk-virtual-scroll-viewport>
+                </mat-card>
+        </div>
+        <div class="col-sm-4 d-flex">
+            <mat-card class="card card-body flex-fill">
+                    <h6> RANKINGS </h6>
+                    <cdk-virtual-scroll-viewport itemSize="10" class="example-viewport2">
+                        <div *cdkVirtualFor="let artist of data" class="list">
+                            <div class="d-flex mb-0">
+                                <div class="p-2 mt-3">
+                                    {{artist.id}}.
+                                </div>
+                                <div class="p-2">
+                                    <img class="img-fluid rounded-circle img-thumbnail2" src="{{artist.thumbnailUrl}}">
+                                </div>
+                                <div class="p-2">
+                                    Methew John (Site {{ artist.id}})<br/>
+                                        745.45 KW
+                                </div>
+                            </div><hr />
+                        </div>
+                    </cdk-virtual-scroll-viewport>
+                     
+            </mat-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+      <div class="col-sm-8 d-flex">
+          <mat-card class="example-card card card-body flex-fill">
+              <div class="row">
+                    <div class="col-sm-4">
+                        <mat-card-content>
+                            POWER GENERATION<br />
+                            <h3>345.45 KW</h3>
+                            <span class="green">+42 </span><small> since last week </small>
+                        </mat-card-content>
+                        <button class="btn-red" mat-button>3 HIGH IMPACT RISK</button>       
+                    </div>
+                    <div class="col-sm-8" >
+                        <div class="chart">
+                            <canvas id="canvas">{{ chart }}</canvas>
+                        </div>  
+                    </div>
+              </div>
+          </mat-card>
+      </div>
+      <div class="col-sm-4 d-flex">
+          <mat-card class="example-card card card-body flex-fill">
+              <div class="row">
+                  <div class="col-sm-5">
+                    <h6> RANK </h6>                              
+                    <span class="icon"><i class="material-icons" style="color:#5C6AC9;">stars</i> &nbsp;6</span><br />                              
+                    <small>You're in top </small><span class="green">40%</span>
+                  </div>
+                  <div class="col-sm-7">
+                      <h6> PLANTS WITH HIGH O/P </h6>
+                      <span class="icon"><i class="material-icons" style="color:#5C6AC9;">code</i> &nbsp;3</span><br />
+                      <span class="green">10 </span><small> in this month </small>
+                  </div>
+              </div>
+                  <hr />
+              <div class="row">
+                  <div class="col-sm-12">
+                      TOP CATEGORIES<br/><br/>
+                      <button class="btn-white" mat-button>Power</button>&nbsp;
+                      <button class="btn-white" mat-button>Renewable</button>
+                  </div>
+              </div>
+          </mat-card>
+      </div>
+    </div>
+</div>

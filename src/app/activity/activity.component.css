@@ -1,0 +1,47 @@
+  .btn-red {
+    background-color: #FAF2EF;
+    color: #D28E62;
+    border-radius: 15px;
+  }
+  .btn-green {
+    background-color: #F0FAEF;
+    color: #65D373;
+    border-radius: 15px;
+  }
+  .example-viewport{
+    height: 300px;
+    width: 95%;
+    display: flex;
+    overflow: hidden;
+   }
+   .example-viewport:hover {
+      overflow-y:scroll ;
+  }
+   .example-viewport2{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+   }
+   .example-viewport2:hover {
+    overflow-y:scroll ;
+  }
+   .list{
+    justify-content: center;
+    align-items: center;
+   }
+   .card{
+    margin-bottom: 40px;
+    display: flex;
+   }
+   .img-thumbnail {
+    width: 70px;
+    height: 70px;
+   }
+   .img-thumbnail2 {
+    width: 60px;
+    height: 60px;
+   }
+   hr{
+     margin: 0;
+   }

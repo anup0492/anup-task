@@ -1,0 +1,29 @@
+
+.example-card {
+    max-width: 100%;
+    /* height: 100%; */
+    margin-top: -50px;
+  }
+h6 {
+  font-size: small;
+}
+  .btn-red {
+    background-color: #FAF2EF;
+    color: #D28E62;
+    border-radius: 15px;
+  }
+  .btn-white {
+    background-color: #F1F2F3;
+    color: #AAB2BA;
+    border-radius: 15px;
+  }
+  .chart {
+    margin: 0;
+    /* height: 80%; */
+  }
+  .icon {
+    font-size: 30px;
+  }
+  .green {
+    color: #36CB89;
+  }

@@ -1,0 +1,19 @@
+.box {
+    height: 500px;
+    position: relative;
+    width:50%;
+}
+.card {
+    height: 400px;
+    width: 400px;
+} 
+.position {
+    position: absolute;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
